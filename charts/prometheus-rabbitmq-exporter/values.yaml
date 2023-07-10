@@ -52,6 +52,8 @@ rabbitmq:
   timeout: 30
   max_queues: 0
   excludeMetrics: ""
+  # Enables overriding env vars using an external ConfigMap. This field accepts templated values as well, e.g. '{{ template "external-configMapName-helper" . }}'
+  configMapOverrideReference: ""
 
 ## Additional labels to set in the Deployment object. Together with standard labels from
 ## the chart
