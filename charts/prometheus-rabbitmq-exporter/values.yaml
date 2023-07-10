@@ -34,6 +34,7 @@ affinity: {}
 
 loglevel: info
 rabbitmq:
+  # This field can also accept templated values 
   url: http://myrabbit:15672
   user: guest
   password: guest
